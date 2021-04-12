@@ -11,6 +11,21 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+helpers do 
+  def hours
+    return (1..12).to_a.flat_map { |i| [ i ] * 60}
+  end
+
+  def minutes
+    mins_in_day = (1..60).to_a
+    mins = []
+    12.times do
+      mins.push(mins_in_day)
+    end
+    return mins.flatten
+  end
+end
+
 # Per-page layout changes
 page '/*.xml', layout: false
 page '/*.json', layout: false

@@ -1,0 +1,29 @@
+
+// Grid
+body {
+  margin: 40px;
+}
+
+minute {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
+}
+
+minute:nth-child(60) {
+  background-color: #ccc;
+  color: #000;
+}
+
+.passed {
+  background-color: #111;
+}
+
+clockbox {
+  width: 600px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(20, 50px);
+}

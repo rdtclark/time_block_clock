@@ -3,5 +3,11 @@ title: Welcome to Middleman
 ---
 
 <h1>
-  this is your time.. ..  . . ..    .
+  time.. ..  . . ..    .
 </h1>
+
+<clockbox>
+<% hours.zip(minutes).each do |hr, min| %>
+  <minute class="<%= "hr#{hr}" %> <%= "min#{min}" %>"></minute>
+<% end %>
+</clockbox>
