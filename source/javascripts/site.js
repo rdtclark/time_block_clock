@@ -6,4 +6,8 @@ window.onload = function() {
 	};
 
 	setInterval(refreshTime, 1000);
+
+	function passedTime() {
+	};
+
 };

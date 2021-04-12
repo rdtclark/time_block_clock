@@ -5,7 +5,11 @@ title: Welcome to Middleman
 <h3 id="current_date">Time:</h3>
 
 <clockbox>
+<% counter = 0 %>
 <% hours.zip(minutes).each do |hr, min| %>
-  <minute class="<%= "hr#{hr}" %> <%= "min#{min}" %>"></minute>
+  <minute 
+    class= "<%= "hr#{hr}" %> <%= "min#{min}" %>" 
+    id="<%= "block#{counter += 1}" %>">
+  </minute>
 <% end %>
 </clockbox>
