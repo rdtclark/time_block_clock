@@ -1,14 +1,4 @@
 window.onload = function() {
-
-	// Show the current time in the header
-	function refreshTime() {
-		let currentTime = new Date();
-		document.getElementById("current_date").innerHTML = currentTime.toTimeString();
-	};
-
-	// Update the clock every second
-	setInterval(refreshTime, 1000);
-
 	function refreshMinutes() {
 		// Count the number of minutes that have passed since 8AM today
 		function passed_minutes(now, start_of_day) 
@@ -46,6 +36,6 @@ window.onload = function() {
 
 	};
 
-	setInterval(refreshMinutes, 10000);
+	setInterval(refreshMinutes, 35000);
 
 };
