@@ -6,6 +6,7 @@ configure :development do
 end
 
 activate :directory_indexes
+activate :autoprefixer
 
 helpers do 
   def hours
