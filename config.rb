@@ -7,10 +7,6 @@ end
 
 activate :directory_indexes
 
-activate :autoprefixer do |prefix|
-  prefix.browsers = "last 2 versions"
-end
-
 helpers do 
   def hours
     return (1..12).to_a.flat_map { |i| [ i ] * 60}
