@@ -9,8 +9,8 @@ window.onload = function() {
 		}
 
 		now = new Date();
-		dt3 = now.toDateString();
-		start_of_day = new Date(dt3);
+		today = now.toDateString();
+		start_of_day = new Date(today);
 
 		// Create a range method to create a array of minutes passed
 		const range = (start, end, length = end - start + 1) =>
@@ -36,6 +36,6 @@ window.onload = function() {
 
 	};
 
-	setInterval(refreshMinutes, 35000);
+	setInterval(refreshMinutes, 3000);
 
 };
