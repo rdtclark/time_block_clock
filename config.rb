@@ -17,11 +17,9 @@ helpers do
   end
 
   def minutes
-    mins_in_day = (1..60).to_a
+    mins_count = (1..60).to_a
     mins = []
-    12.times do
-      mins.push(mins_in_day)
-    end
+    12.times do mins.push(mins_count) end
     return mins.flatten
   end
 end

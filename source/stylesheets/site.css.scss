@@ -12,14 +12,14 @@ minute {
 	font-size: 150%;
 }
 
-minute:nth-child(60) {
+.this_minute {
 	background-color: #ccc;
 	color: #000;
 	animation: fadeIn 1s infinite alternate;
 }
 
 .passed {
-	background-color: #111;
+	background-color: orange;
 }
 
 clockbox {
