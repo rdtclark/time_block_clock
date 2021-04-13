@@ -36,12 +36,16 @@ window.onload = function() {
 			element.classList.add('passed')
 		)
 
-		// Identify current minute on the clock
+		// Highlight current minute
 		let current_minute = document.querySelectorAll(`#block${passed_minutes(now, start_of_day)}`)
-		current_minute.item(0).classList.toggle('this_minute')
 		current_minute.item(0).classList.add('this_minute')
+
+		// Un-highlight previous minute
+		let last_minute = document.querySelectorAll(`#block${passed_minutes(now, start_of_day) - 1}`)
+		last_minute.item(0).classList.remove('this_minute')
+
 	};
 
-	setInterval(refreshMinutes, 60000);
+	setInterval(refreshMinutes, 10000);
 
 };
