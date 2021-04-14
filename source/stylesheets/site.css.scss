@@ -8,12 +8,26 @@ h1 {
 	font-size: 200%;
 }
 
+day {
+	background-color: green;
+	color: #fff;
+	border-radius: 5px;
+	padding: 10px;
+	// inner shadow
+	-moz-box-shadow:    inset 0 0 2px #fed8b1;
+	-webkit-box-shadow: inset 0 0 2px #fed8b1;
+	box-shadow:         inset 0 0 2px #fed8b1;
+}
+
 minute {
 	background-color: #444;
 	color: #fff;
 	border-radius: 5px;
-	padding: 10px;
-	font-size: 150%;
+	padding: 12px;
+	// inner shadow
+	-moz-box-shadow:    inset 0 0 2px #fed8b1;
+	-webkit-box-shadow: inset 0 0 2px #fed8b1;
+	box-shadow:         inset 0 0 2px #fed8b1;
 }
 
 .this_minute {
@@ -34,7 +48,7 @@ clockbox {
 	width: 600px;
 	display: grid;
 	grid-gap: 5px;
-	grid-template-columns: repeat(20, 50px);
+	grid-template-columns: repeat(30, 30px);
 }
 
 @keyframes fadeIn { 

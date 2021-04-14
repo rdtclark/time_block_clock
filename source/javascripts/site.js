@@ -19,7 +19,7 @@ window.onload = function() {
 		// Array of minutes passed up to current time
 		let minutes_passed = range(1, passed_minutes(now, start_of_day))
 
-		// Add selector to pass to grab from the DOM 
+		// Grab all passed minute blocks from the DOM 
 		const passed_minute_elements = document.querySelectorAll(minutes_passed.map(id => `#block${id}`).join(', '));
 
 		passed_minute_elements.forEach(element =>
