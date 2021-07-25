@@ -22,12 +22,12 @@ day {
 minute {
 	background-color: #444;
 	color: #fff;
-	border-radius: 5px;
-	padding: 12px;
+	border-radius: 1mm;
+	padding: 3mm;
 	// inner shadow
-	-moz-box-shadow:    inset 0 0 2px #fed8b1;
-	-webkit-box-shadow: inset 0 0 2px #fed8b1;
-	box-shadow:         inset 0 0 2px #fed8b1;
+	// -moz-box-shadow:    inset 0 0 2px #fed8b1;
+	// -webkit-box-shadow: inset 0 0 2px #fed8b1;
+	// box-shadow:         inset 0 0 2px #fed8b1;
 }
 
 .this_minute {
@@ -45,10 +45,10 @@ minute {
 }
 
 clockbox {
-	width: 600px;
+	width: 204mm;
 	display: grid;
-	grid-gap: 5px;
-	grid-template-columns: repeat(30, 30px);
+	grid-gap: 1mm;
+	grid-template-columns: repeat(30, 6mm);
 }
 
 @keyframes fadeIn { 
