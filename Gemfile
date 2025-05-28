@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'middleman', '~> 4.2'
+ruby '3.4.4'
+
+gem 'middleman', '~> 4.6.0'
 gem "middleman-livereload"
-gem 'middleman-autoprefixer', '~> 2.7' 
+gem 'middleman-autoprefixer'
+
+# For deployment
+gem "rake"
+gem 'bundler'
